@@ -1,0 +1,14 @@
+from tabulate import tabulate
+#Dados Da Tabela
+dados = [
+    ["João", 18, "Desenvolvedor"],
+    ["Fabiana", 16, "Designer"],
+    ["Glaucia", 22, "Gerente De Projetos"],
+    ["Mariane", 34, "LPTI"]
+]
+
+#Cabeçalho
+Cabeçalho = ["Nome","Idade", "Cargo"]
+#imprimir a tabela
+tabela = tabulate(dados, headers=Cabeçalho, tablefmt="grid")
+print(tabela)
